@@ -2,7 +2,7 @@
 #   Use the qwant search engine in order to perform a search query
 #
 # Dependencies
-#   "underscore": "1.8.3"
+#   "he": "^1.1.0"
 #
 # Configuration:
 #
@@ -15,6 +15,7 @@
 #   Loïc M. <mura.loic0@gmail.com>
 
 _ = require('underscore');
+he = require('he');
 
 module.exports = (robot) ->
   robot.respond /qwant (.*)/i, (msg) ->
@@ -37,7 +38,6 @@ module.exports = (robot) ->
         else msg.send "Nothing match your query."
 
 parseText = (text) ->
-  text = _.unescape text
-  text = text.replace /&#0?39;/g, "'"
+  text = he.decode text
   text = text.replace /(<b>)|(<\/b>)/g, ''
   return text
