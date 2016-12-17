@@ -28,11 +28,13 @@ module.exports = (robot) ->
           return
 
         data = JSON.parse body
-        for i in [0..2]
-          title = parseText(data.data.result.items[i].title)
-          desc = parseText(data.data.result.items[i].desc)
-          url = data.data.result.items[i].url
-          msg.send "\n#{i+1}: #{title} \n#{desc} \n#{url}\n"
+        if data.data.result.items.length != 0
+          for i in [0..2]
+            title = parseText(data.data.result.items[i].title)
+            desc = parseText(data.data.result.items[i].desc)
+            url = data.data.result.items[i].url
+            msg.send "\n#{i+1}: #{title} \n#{desc} \n#{url}\n"
+        else msg.send "Nothing match your query."
 
 parseText = (text) ->
   text = _.unescape text
