@@ -1,6 +1,6 @@
 # hubot-qwant
 
-Use the qwant search engine in order to perform a search query
+Use the qwant unofficialy API to perform search query.
 
 See [`src/qwant.coffee`](src/qwant.coffee) for full documentation.
 
@@ -17,14 +17,3 @@ Then add **hubot-qwant** to your `external-scripts.json`:
   "hubot-qwant"
 ]
 ```
-
-## Sample Interaction
-
-```
-user1>> hubot hello
-hubot>> hello!
-```
-
-## NPM Module
-
-https://www.npmjs.com/package/hubot-qwant

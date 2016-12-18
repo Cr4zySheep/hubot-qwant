@@ -1,19 +1,15 @@
 # Description
-#   Use the qwant search engine in order to perform a search query
+#   Use the qwant unofficialy API in order to perform a search query
 #
 # Dependencies
 #   "he": "^1.1.0"
 #
-# Configuration:
-#
 # Commands:
-#   hubot qwant <query> - Displays web results of your <query> using the qwant search engine
-#   hubot qnews <query> - Displays news results of your <query> using the qwant search engine
-#   hubot qsocial <query> - Displays social results of your <query> using the qwant search engine
-#   hubot qimg <query> - Displays images results of your <query> using the qwant search engine
-#   hubot qvideos <query> - Displays videos results of your <query> using the qwant search engine
-#
-# Notes:
+#   hubot qwant <query> - Displays web results of your <query> using the qwant API
+#   hubot qnews <query> - Displays news results of your <query> using the qwant API
+#   hubot qsocial <query> - Displays social results of your <query> using the qwant API
+#   hubot qimg <query> - Displays images results of your <query> using the qwant API
+#   hubot qvideos <query> - Displays videos results of your <query> using the qwant API
 #
 # Author:
 #   Loïc M. <mura.loic0@gmail.com>

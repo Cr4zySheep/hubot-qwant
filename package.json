@@ -1,16 +1,16 @@
 {
   "name": "hubot-qwant",
   "description": "Use the qwant search engine in order to perform a search query",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "author": "Loïc M. <mura.loic0@gmail.com>",
   "license": "MIT",
   "keywords": "qwant",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-qwant.git"
+    "url": "git://github.com/Cr4zySheep/hubot-qwant.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-qwant/issues"
+    "url": "https://github.com/Cr4zySheep/hubot-qwant/issues"
   },
   "dependencies": {
     "he": "^1.1.0"
